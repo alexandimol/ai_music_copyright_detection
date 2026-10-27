@@ -1,0 +1,16 @@
+# Σύνολο δεδομένων POP909: δεν αναδιανέμεται (βλ. README, «Γρήγορη επαλήθευση»)
+data/
+
+# Παράγωγα του συνόλου δεδομένων: δημιουργούνται ξανά με preprocessing.py και pairs.py
+outputs/segments.pkl
+outputs/pairs/
+
+# Παλιό αντίγραφο του κώδικα
+ai_music_copyright/
+
+# Python και περιβάλλον ανάπτυξης
+__pycache__/
+*.pyc
+.idea/
+venv/
+.venv*/
