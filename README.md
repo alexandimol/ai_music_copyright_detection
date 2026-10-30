@@ -53,8 +53,8 @@ python memorization.py       # Πίνακας 7.4, Σχήματα 7.6–7.7
 | 2 | `python pairs.py` | Δημιουργία επισημασμένων ζευγών με ελεγχόμενους μετασχηματισμούς | ~3 λεπτά |
 | 3 | `python baselines.py` | Κλασικές μέθοδοι: αντιστοίχιση διαστημάτων, Smith–Waterman, αρμονία, ήχος (chroma + DTW) | ~15–20 λεπτά |
 | 4 | `python train.py --quick` | Γρήγορη δοκιμή ότι το TensorFlow και το μοντέλο λειτουργούν | ~1–3 λεπτά |
-| 5 | `python train.py` | Πλήρης εκπαίδευση του Siamese ανιχνευτή | ~15–40 λεπτά |
-| 5β | `python train.py --branches melody --name siamese_melody` | Πείραμα αφαίρεσης (μόνο μελωδία) | ~2 λεπτά |
+| 5 | `python train.py` | Πλήρης εκπαίδευση του Siamese ανιχνευτή | ~4–9 λεπτά |
+| 5β | `python train.py --branches melody --name siamese_melody` | Πείραμα αφαίρεσης (μόνο μελωδία) | ~2–4 λεπτά |
 | 6 | `python xai.py` | Εικόνες επεξήγησης (πίνακες ομοιότητας, Integrated Gradients, συνεισφορές) | ~1 λεπτό |
 | 7 | `python generator.py --name gen_full` | Generator LSTM σε όλα τα δεδομένα εκπαίδευσης + 200 μελωδίες | ~15–25 λεπτά |
 | 7β | `python generator.py --name gen_small --subset 100 --epochs 400 --batch_size 16 --dropout 0` | Generator με υπερπροσαρμογή (θετικός έλεγχος απομνημόνευσης) | ~3–8 λεπτά |
