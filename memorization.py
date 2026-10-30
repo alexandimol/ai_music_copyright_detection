@@ -152,7 +152,7 @@ def summarize(name, results):
 def plot_distributions(all_results, path):
     """
     Αθροιστική κατανομή (ECDF) της μέγιστης βαθμολογίας ομοιότητας ανά ομάδα,
-    και του μήκους του μεγαλύτερου αυτούσιου κοινού αποσπάσματος.
+    και του μήκους του μεγαλύτερου κοινού αποσπάσματος.
     """
     fig, axes = plt.subplots(1, 2, figsize=(11, 4.3))
     for i, (name, results) in enumerate(all_results.items()):
@@ -166,7 +166,7 @@ def plot_distributions(all_results, path):
                     color=color, linestyle="none")
     axes[0].axvline(config.MEM_THRESHOLD, color=S.MUTED, linestyle=":", linewidth=1)
     axes[0].set_xlabel("Μέγιστη βαθμολογία ομοιότητας (ανιχνευτής)")
-    axes[1].set_xlabel("Μεγαλύτερο αυτούσιο κοινό απόσπασμα (νότες)")
+    axes[1].set_xlabel("Μεγαλύτερο κοινό απόσπασμα (νότες)")
     for ax in axes:
         ax.set_ylabel("Αθροιστικό ποσοστό μελωδιών")
         ax.set_ylim(0, 1.02)
